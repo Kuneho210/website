@@ -101,13 +101,13 @@ pre {
 
 /* small boxes on the left */
 .small-box {
-  width: 360px;
+  width: 600px;
   height: 290px;
 }
 
 /* tall box on the right */
 .big-box {
-  width: 420px;
+  width: 300px;
   height: 360px;
 }
 
@@ -174,4 +174,25 @@ a:hover {
 @keyframes scroll-left {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-100%); }
+}
+.box p {
+  margin: 4px 0;
+}
+
+.box ul {
+  margin: 6px 0 0 18px; /* gap between top box and text */
+  padding: 0;
+}
+
+.box li {
+  margin: 2px 0;
+}
+.box {
+  border: 1px solid #ffffff80;
+  background: radial-gradient(circle at top left, #111319, #050609 70%);
+  padding: 14px 18px;
+  line-height: 1.5;
+  box-shadow:
+    0 0 0 1px #0ff0ff10,
+    0 0 18px #0ff0ff20;
 }
