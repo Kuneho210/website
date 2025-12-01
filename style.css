@@ -23,7 +23,7 @@ pre {
   display: flex;
   gap: 40px;
   margin-top: 30px;
-  margin-left: 40px;
+  margin-left: 40px;  /* aligns with the GIF + logo */
 }
 
 /* LEFT COLUMN ONLY */
@@ -52,5 +52,5 @@ pre {
   height: 500px;
 }
 .logo-text {
-  transform: translateX(-30px);
+  transform: translateX(-30px);   /* pull text closer horizontally */
 }
