@@ -1,44 +1,56 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do some  thing, just try searching Google for questions like
-   "how to change link color." */
-   
 body {
   font-family: "MS UI Gothic", sans-serif;
-  font-size: 1em;
   color: white;
   background-color: black;
-   }
-pre {
-  font-size: 10px;
-   }
-.test {
-  border: 1px solid white;
-  padding: 10px;
-  width: 400px;
-  height: 300px;
-  line-height: 1.4;
-}
-.text  {
-  margin-left: 10px;
 }
 
 .wrapper {
   display: flex;
-  align-items: flex-start; /* keeps image aligned nicely with top of the box */
-  gap: 20px; /* space between pic + text */
+  align-items: center;
+  gap: 0;
 }
-pre {
-  margin-top: 20px; /* adjust higher or lower */
-}
+
 .xio_wave {
   width: 100px;
 }
-.introduction {
-  margin-left: 10px;
+
+pre {
+  margin: 0;
 }
-.art{
-  position: relative;
-  margin-left: 600px;
-  margin-top: -400px;
-  width: 20%;
+
+/* MAIN ROW */
+.content-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+/* LEFT COLUMN ONLY */
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* BOX STYLE */
+.box {
+  border: 1px solid white;
+  background: black;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+/* SIZE OF BOXES */
+.small-box {
+  width: 350px;
+  height: 250px;
+}
+
+.big-box {
+  width: 400px;
+  height: 500px;
+}
+.logo-text {
+  transform: translateX(-30px);
 }
