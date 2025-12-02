@@ -10,15 +10,14 @@ body {
   background-color: #020306;
   color: #e5e5e5;
   font-family: "JetBrains Mono", "MS UI Gothic", monospace;
-  display: flex;
-  justify-content: center;
 }
-
 /* center */
 .page-center {
+  margin: 0;
   width: 960px;
   max-width: 100%;
   position: relative;
+  margin-left: 40px;
 }
 
 /* subtle scanline / CRT effect */
@@ -195,4 +194,84 @@ a:hover {
   box-shadow:
     0 0 0 1px #0ff0ff10,
     0 0 18px #0ff0ff20;
+}
+.big-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* === PROJECTS PAGE === */
+
+.project-box {
+  width: 100%;
+  min-height: 600px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+/* Each project entry */
+.project-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+/* project image */
+.project-img {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ffffff50;
+}
+
+/* description text */
+.project-desc {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ccc;
+}
+.nav {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nav a {
+  color: #7bf7ff;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.nav a:hover {
+  filter: brightness(1.4);
+  text-shadow: 0 0 6px #7bf7ff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: #7bf7ff;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-links a:hover {
+  filter: brightness(1.4);
+  text-shadow: 0 0 6px #7bf7ff;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0.9);
 }
