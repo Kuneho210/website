@@ -101,7 +101,7 @@ pre {
 /* small boxes on the left */
 .small-box {
   width: 600px;
-  height: 290px;
+  height: 350px;
 }
 
 /* tall box on the right */
@@ -200,6 +200,7 @@ a:hover {
   font-weight: 700;
   color: #fff;
 }
+
 
 /* === PROJECTS PAGE === */
 
