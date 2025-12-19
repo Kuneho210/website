@@ -8,16 +8,21 @@ body {
   margin: 0;
   padding: 40px 0;
   background-color: #020306;
+  /* background image for the site */
+  background-image: url('bg.gif');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   color: #e5e5e5;
   font-family: "JetBrains Mono", "MS UI Gothic", monospace;
 }
 /* center */
 .page-center {
-  margin: 0;
+  margin: 0 auto;
   width: 960px;
   max-width: 100%;
   position: relative;
-  margin-left: 40px;
+  padding: 0 40px;
 }
 
 /* subtle scanline / CRT effect */
@@ -108,6 +113,11 @@ pre {
 .big-box {
   width: 300px;
   height: 360px;
+}
+
+/* taller right-side box used on some pages */
+.big-box-tall {
+  height: 725px; /* roughly two stacked big-box heights + gap */
 }
 
 /* ==== TEXT INSIDE BOXES ==== */
@@ -211,6 +221,24 @@ a:hover {
   margin-top: 24px;
 }
 
+/* Art gallery: scrollbar */
+.project-box.art-gallery {
+  max-height: 640px;
+  overflow-y: auto;
+  padding-right: 12px; 
+}
+
+.project-box.art-gallery::-webkit-scrollbar {
+  width: 10px;
+}
+.project-box.art-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+.project-box.art-gallery::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.06);
+  border-radius: 6px;
+}
+
 /* Each project entry */
 .project-entry {
   display: flex;
@@ -275,4 +303,65 @@ a:hover {
   width: 16px;
   height: 16px;
   filter: brightness(0.9);
+}
+
+/* === ART GALLERY GRID === */
+
+
+.art-grid {
+  display: grid;
+  /* increase minimum tile size so images appear larger across the row */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.art-square {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1;
+  border: 1px solid #ffffff80;
+  background: radial-gradient(circle at top left, #111319, #050609 70%);
+  /* slightly reduce internal padding so the image can occupy more space */
+  padding: 6px;
+  box-shadow:
+    0 0 0 1px #0ff0ff10,
+    0 0 18px #0ff0ff20;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.art-img {
+  width: 100%;
+  /* expand the image area inside the square for a larger visual */
+  height: 92%;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid #ffffff40;
+}
+
+.art-title {
+  /* reduce title area so the image can be bigger */
+  height: 8%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #ccc;
+  padding: 4px 8px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* === PROJECT LINKS === */
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-entry {
+  transition: none;
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>xio | art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="page-center">
+
+    <div class="wrapper">
+      <img src="xio_wave.gif" class="xio_wave" />
+<pre class="logo-text">
+           _                    
+       _ _|_|___ ___ ___ ___ _ _ 
+      |_'_| | . | . | .'| . | | |
+      |_,_|_|___|  _|__,|___|___|
+                |_|
+                                        
+</pre>
+
+    </div>
+
+    <div class="nav">
+      <a href="index.html">home</a> /
+      <a href="projects.html">projects</a>
+    </div>
+
+    <div class="box project-box art-gallery">
+      <p class="big-title">DIGITAL ART</p>
+      <p>> compiled art gallery</p>
+
+      <div class="art-grid">
+        <div class="art-square">
+          <img src="digital_art.jpg" class="art-img">
+          <p class="art-title">Art Title Here</p>
+        </div>
+
+        <div class="art-square">
+          <img src="digital_art.jpg" class="art-img">
+          <p class="art-title">Another Piece</p>
+        </div>
+
+        <div class="art-square">
+          <img src="digital_art.jpg" class="art-img">
+          <p class="art-title">Work in Progress</p>
+        </div>
+
+        <div class="art-square">
+          <img src="digital_art.jpg" class="art-img">
+          <p class="art-title">Experimental</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-text">
+      <span>art — creativity — sketches — learning — expression —</span>
+    </div>
+  <audio id="bgMusic" loop>
+  <source src="music.mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.addEventListener('click', function() {
+    const audio = document.getElementById('bgMusic');
+    if (audio.paused) {
+      audio.play();
+    }
+  }, { once: true });
+</script>
+  </div>
+</body>
+</html>
