@@ -9,7 +9,7 @@ body {
   padding: 40px 0;
   background-color: #020306;
   /* background image for the site */
-  background-image: url('bg.gif');
+  background-image: url('../website/images/bg.gif');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
